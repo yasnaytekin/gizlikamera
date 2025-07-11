@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizli Kamera Dedektörü - Gizlilik Politikası</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        h1, h2 { color: #333; }
+        strong { font-weight: bold; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Gizlilik Politikası</h1>
+    <p><strong>Son Güncelleme Tarihi:</strong> 11 Temmuz 2025</p>
+
+    <p>Bu Gizlilik Politikası, Gizli Kamera Dedektörü ("Uygulama") tarafından, mobil cihazlarda kullanıcı verilerinin nasıl toplandığını, kullanıldığını, ifşa edildiğini ve korunduğunu açıklar. Uygulamamızı kullanarak bu politikada belirtilen veri uygulamalarını kabul etmiş olursunuz.</p>
+
+    <h2>1. Hangi Bilgileri Topluyoruz ve Neden?</h2>
+    <p>Uygulamamızın temel amacı, cihazınızdaki sensörleri ve donanım özelliklerini kullanarak çevrenizdeki potansiyel gizli kamera ve dinleme cihazlarını tespit etmenize yardımcı olmaktır. Bu işlevselliği sağlamak için, doğrudan kişisel olarak tanımlanabilir bilgiler (adınız, e-posta adresiniz, telefon numaranız vb.) <strong>toplamıyoruz ve saklamıyoruz.</strong></p>
+    <h3>Kamera Erişimi:</h3>
+    <ul>
+        <li><strong>Amaç:</strong> "IR Kamera Testi" özelliği, cihazınızın kamerasını kullanarak insan gözüyle görünmeyen kızılötesi (IR) ışık kaynaklarını tespit etmek için kullanılır.</li>
+        <li><strong>Veri Toplama:</strong> Uygulama, kamera görüntülerine <strong>canlı olarak erişir ancak bu görüntüleri kaydetmez, saklamaz veya üçüncü taraflarla paylaşmaz.</strong> Kamera erişimi yalnızca gerçek zamanlı IR tespiti için geçici olarak kullanılır.</li>
+    </ul>
+    <h2>6. Bize Ulaşın</h2>
+    <p>Bu Gizlilik Politikası hakkında herhangi bir sorunuz veya endişeniz varsa, lütfen <a href="mailto:seninemailadresin@example.com">seninemailadresin@example.com</a> adresinden bizimle iletişime geçin.</p>
+
+</body>
+</html>
