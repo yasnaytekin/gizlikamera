@@ -5,28 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gizli Kamera Dedektörü - Gizlilik Politikası</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 0 20px; }
-        h1, h2 { color: #333; }
-        strong { font-weight: bold; }
-        ul { list-style-type: disc; margin-left: 20px; }
-        li { margin-bottom: 5px; }
+        /* Genel Stil */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #f9f9f9;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Başlıklar */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Paragraflar */
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        p strong {
+            color: #e74c3c; /* Vurgulanan metin için daha belirgin renk */
+        }
+
+        /* Listeler */
+        ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        li strong {
+            color: #2980b9; /* Liste başlıkları için farklı vurgu rengi */
+        }
+
+        /* Bağlantılar */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ek Bilgiler */
+        .last-updated {
+            text-align: right;
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1>Gizlilik Politikası</h1>
-    <p><strong>Son Güncelleme Tarihi:</strong> 11 Temmuz 2025</p>
+    <p class="last-updated"><strong>Son Güncelleme Tarihi:</strong> 11 Temmuz 2025</p>
 
-    <p>Bu Gizlilik Politikası, Gizli Kamera Dedektörü ("Uygulama") tarafından, mobil cihazlarda kullanıcı verilerinin nasıl toplandığını, kullanıldığını, ifşa edildiğini ve korunduğunu açıklar. Uygulamamızı kullanarak bu politikada belirtilen veri uygulamalarını kabul etmiş olursunuz.</p>
+    <p>Bu Gizlilik Politikası, <strong>Gizli Kamera Dedektörü</strong> ("Uygulama") tarafından, mobil cihazlarda kullanıcı verilerinin nasıl toplandığını, kullanıldığını, ifşa edildiğini ve korunduğunu açıklar. Uygulamamızı kullanarak bu politikada belirtilen veri uygulamalarını kabul etmiş olursunuz.</p>
 
     <h2>1. Hangi Bilgileri Topluyoruz ve Neden?</h2>
     <p>Uygulamamızın temel amacı, cihazınızdaki sensörleri ve donanım özelliklerini kullanarak çevrenizdeki potansiyel gizli kamera ve dinleme cihazlarını tespit etmenize yardımcı olmaktır. Bu işlevselliği sağlamak için, doğrudan kişisel olarak tanımlanabilir bilgiler (adınız, e-posta adresiniz, telefon numaranız vb.) <strong>toplamıyoruz ve saklamıyoruz.</strong></p>
+
+    <p>Ancak, aşağıdaki cihaz izinlerine ve verilerine Uygulamanın işlevselliği için erişimimiz gerekebilir:</p>
+
     <h3>Kamera Erişimi:</h3>
     <ul>
-        <li><strong>Amaç:</strong> "IR Kamera Testi" özelliği, cihazınızın kamerasını kullanarak insan gözüyle görünmeyen kızılötesi (IR) ışık kaynaklarını tespit etmek için kullanılır.</li>
+        <li><strong>Amaç:</strong> "IR Kamera Testi" özelliği, cihazınızın kamerasını kullanarak insan gözüyle görülemeyen kızılötesi (IR) ışık kaynaklarını tespit etmek için kullanılır.</li>
         <li><strong>Veri Toplama:</strong> Uygulama, kamera görüntülerine <strong>canlı olarak erişir ancak bu görüntüleri kaydetmez, saklamaz veya üçüncü taraflarla paylaşmaz.</strong> Kamera erişimi yalnızca gerçek zamanlı IR tespiti için geçici olarak kullanılır.</li>
     </ul>
-    <h2>6. Bize Ulaşın</h2>
-    <p>Bu Gizlilik Politikası hakkında herhangi bir sorunuz veya endişeniz varsa, lütfen <a href="mailto:seninemailadresin@example.com">seninemailadresin@example.com</a> adresinden bizimle iletişime geçin.</p>
 
+    <h3>Konum Erişimi (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION):</h3>
+    <ul>
+        <li><strong>Amaç:</strong> "Wi-Fi Cihaz Taraması" ve "Bluetooth Cihaz Taraması" özellikleri, çevrenizdeki Wi-Fi ağlarını ve Bluetooth cihazlarını taramak için konum iznine ihtiyaç duyar. Bu, Android işletim sisteminin bir gerekliliğidir, çünkü Wi-Fi ve Bluetooth taramaları potansiyel olarak cihazınızın konumunu ortaya çıkarabilir.</li>
+        <li><strong>Veri Toplama:</strong> Uygulama, tarama sonuçlarından elde edilen <strong>konum verilerini kaydetmez, saklamaz veya üçüncü taraflarla paylaşmaz.</strong> Konum izni, yalnızca tarama işlemini gerçekleştirmek için kullanılır ve tarama sonuçları cihazda işlenir, harici sunuculara gönderilmez.</li>
+    </ul>
+
+    <h3>Wi-Fi Durumu ve Değişikliği (ACCESS_WIFI_STATE, CHANGE_WIFI_STATE):</h3>
+    <ul>
+        <li><strong>Amaç:</strong> "Wi-Fi Cihaz Taraması" özelliği için cihazınızın Wi-Fi durumunu kontrol etmek ve Wi-Fi'nin etkinleştirilmesi konusunda kullanıcıyı yönlendirmek için kullanılır.</li>
+        <li><strong>Veri Toplama:</strong> Uygulama, Wi-Fi ağlarının listesini alır ancak bu ağlarla ilgili kişisel veya tanımlayıcı bilgileri (şifreler, bağlantı geçmişi vb.) <strong>toplamaz, saklamaz veya paylaşmaz.</strong></li>
+    </ul>
+
+    <h3>Bluetooth Erişimi (BLUETOOTH, BLUETOOTH_ADMIN, BLUETOOTH_SCAN, BLUETOOTH_CONNECT):</h3>
+    <ul>
+        <li><strong>Amaç:</strong> "Bluetooth Cihaz Taraması" özelliği için çevrenizdeki Bluetooth cihazlarını taramak, cihaz adlarını, adreslerini ve sinyal güçlerini tespit etmek için kullanılır. Ayrıca, Bluetooth donanımını etkinleştirmek için de kullanılır.</li>
+        <li><strong>Veri Toplama:</strong> Uygulama, taranan Bluetooth cihazlarının adlarını, adreslerini ve sinyal güçlerini alır ancak bu verileri (kimlik tespiti yapılabilecek şekilde) <strong>toplamaz, saklamaz veya üçüncü taraflarla paylaşmaz.</strong></li>
+    </ul>
+
+    <h3>Sensör Erişimi (Manyetometre):</h3>
+    <ul>
+        <li><strong>Amaç:</strong> "Manyetik Alan Ölçümü" özelliği için cihazınızdaki manyetik sensörden (manyetometre) veri toplar.</li>
+        <li><strong>Veri Toplama:</strong> Sensörden alınan manyetik alan değerleri <strong>yalnızca uygulama içinde anlık olarak işlenir ve görüntülenir; bu veriler kaydedilmez, saklanmaz veya üçüncü taraflarla paylaşılmaz.</strong></li>
+    </ul>
+
+    <p>Uygulamamızın hiçbir şekilde aşağıdakileri yapmadığını taahhüt ederiz:</p>
+    <ul>
+        <li>Kullanıcıların kişisel kimlik bilgilerini toplamak.</li>
+        <li>Kullanıcıların iletişim bilgilerini toplamak.</li>
+        <li>Kullanıcıların cihaz konumunu sürekli olarak takip etmek veya kaydetmek.</li>
+        <li>Kamera görüntülerini veya ses kayıtlarını kaydetmek.</li>
+        <li>Uygulama dışındaki web sitelerine veya servislere veri göndermek.</li>
+    </ul>
+
+    <h2>2. Veri Güvenliği</h2>
+    <p>Topladığımız tüm (anonim ve kişisel olmayan) verilerin güvenliğini sağlamak için makul önlemler alıyoruz. Ancak, internet üzerinden veya elektronik depolama yoluyla hiçbir veri iletimi %100 güvenli değildir. Bu nedenle, mutlak güvenliği garanti edemeyiz.</p>
+
+    <h2>3. Üçüncü Taraf Hizmetleri</h2>
+    <p>Uygulamamız, herhangi bir üçüncü taraf analiz aracı (örneğin Google Analytics, Firebase Analytics) veya reklam platformu (örneğin Google AdMob) kullanmamaktadır. Bu nedenle, bu tür üçüncü taraflarla veri paylaşımı söz konusu değildir.</p>
+
+    <h2>4. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. Bilinçli olarak 13 yaşın altındaki çocuklardan kişisel olarak tanımlanabilir bilgi toplamıyoruz. Bir çocuğun bize kişisel bilgi verdiğini fark edersek, bu bilgiyi derhal sunucularımızdan sileceğiz. Eğer çocuğunuzun bize kişisel bilgi vermiş olabileceğine inanıyorsanız, lütfen bizimle iletişime geçin.</p>
+
+    <h2>5. Gizlilik Politikasındaki Değişiklikler</h2>
+    <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik olduğunda, yeni Gizlilik Politikasını bu sayfada yayınlayarak sizi bilgilendireceğiz. Değişiklikler bu sayfada yayınlandığı anda yürürlüğe girer. Bu Gizlilik Politikasını periyodik olarak incelemeniz tavsiye edilir.</p>
+
+    <div class="contact-info">
+        <h2>6. Bize Ulaşın</h2>
+        <p>Bu Gizlilik Politikası hakkında herhangi bir sorunuz veya endişeniz varsa, lütfen <a href="mailto:yasnaytekin@gmail.com">yasnaytekin@gmail.com</a> adresinden bizimle iletişime geçin.</p>
+    </div>
 </body>
 </html>
